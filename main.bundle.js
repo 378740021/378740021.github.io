@@ -38,16 +38,24 @@ var Doc = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DOCS; });
 var DOCS = [
-    { id: 11, name: ' Listening 350 Words page2 1-2', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 1 & 2.MP3', page: 2 },
-    { id: 12, name: 'Listening 350 Words page2 3-4', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 3 & 4.MP3', page: 2 },
-    { id: 13, name: 'Listening 350 Words page3 5-6', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 5 & 6.MP3', page: 3 },
-    { id: 14, name: 'Listening 350 Words page3 7-8', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 7 & 8.MP3', page: 3 },
-    { id: 15, name: 'Listening 350 Words page4 9-10', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 9 & 10.MP3', page: 4 },
-    { id: 16, name: 'Listening 350 Words page4 11-12', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 11 & 12.MP3', page: 4 },
-    { id: 17, name: 'Listening 350 Words page5 13-14', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 13 & 14.MP3', page: 5 },
-    { id: 18, name: 'Listening 350 Words page5 15-16', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 15 & 16.MP3', page: 5 },
-    { id: 19, name: 'Listening 350 Words page5 17-18', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 17 & 18.MP3', page: 6 },
-    { id: 20, name: 'Listening 350 Words page5 19-20', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 19 & 20.MP3', page: 6 }
+    { id: 11, name: 'Listening 350 Words  1-2', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 1 & 2.MP3', page: 2 },
+    { id: 12, name: 'Listening 350 Words  3-4', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 3 & 4.MP3', page: 2 },
+    { id: 13, name: 'Listening 350 Words  5-6', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 5 & 6.MP3', page: 3 },
+    { id: 14, name: 'Listening 350 Words  7-8', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 7 & 8.MP3', page: 3 },
+    { id: 15, name: 'Listening 350 Words  9-10', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 9 & 10.MP3', page: 4 },
+    { id: 16, name: 'Listening 350 Words  11-12', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 11 & 12.MP3', page: 4 },
+    { id: 17, name: 'Listening 350 Words  13-14', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 13 & 14.MP3', page: 5 },
+    { id: 18, name: 'Listening 350 Words  15-16', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 15 & 16.MP3', page: 5 },
+    { id: 19, name: 'Listening 350 Words  17-18', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 17 & 18.MP3', page: 6 },
+    { id: 20, name: 'Listening 350 Words  19-20', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 19 & 20.MP3', page: 6 },
+    { id: 21, name: 'Listening 350 Words  21-22', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 21 & 22.MP3', page: 7 },
+    { id: 22, name: 'Listening 350 Words  23-24', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 23 & 24.MP3', page: 7 },
+    { id: 23, name: 'Listening 350 Words  25-26', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 25 & 26.MP3', page: 8 },
+    { id: 24, name: 'Listening 350 Words  27-28', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 27 & 28.MP3', page: 8 },
+    { id: 25, name: 'Listening 350 Words  29-30', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 29 & 30.MP3', page: 9 },
+    { id: 26, name: 'Listening 350 Words  31-32', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 31 & 32.MP3', page: 9 },
+    { id: 27, name: 'Listening 350 Words  33-34', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 33 & 34.MP3', page: 10 },
+    { id: 28, name: 'Listening 350 Words  35', path: './assets/Listening350Words.pdf', voicePath: './assets/Voices/G 35.MP3', page: 10 }
 ];
 
 
@@ -84,7 +92,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'app-root',
-            template: "\n  <div class=\"container\">\n  <table>\n  <tr>\n    <h3 class=\"text-center\">My Words</h3>\n\n  </tr>\n    <tr>\n        <td  class=\"text-center\">\n        <ul>\n         <li *ngFor=\"let doc of documents\" class=\"list-group-item\" (click)=\"onSelect(doc)\">\n            <a>\n              <span >{{doc.name}}</span>\n            </a>\n         </li>\n        </ul>\n        </td>\n   </tr>\n\n  <tr>\n    <td class=\"text-center\">\n      <DocComponent [mydocument]=\"selectedDoc\"></DocComponent>\n    </td>\n  </tr>\n\n  </table>\n  </div>\n  "
+            template: "\n  <div class=\"container\">\n  <table>\n  <tr>\n    <h3 class=\"text-center\">My Words</h3>\n\n  </tr>\n    <tr>\n        <td  class=\"text-center\">\n        <ul class = \"list-group\">\n         <li *ngFor=\"let doc of documents\" class=\"list-group-item\"  (click)=\"onSelect(doc)\">\n            <a>\n              <span >{{doc.name}}</span>\n            </a>\n         </li>\n        </ul>\n        </td>\n   </tr>\n\n  <tr>\n    <td class=\"text-center\">\n      <DocComponent [mydocument]=\"selectedDoc\"></DocComponent>\n    </td>\n  </tr>\n\n  </table>\n  </div>\n  "
         }),
         __metadata("design:paramtypes", [])
     ], AppComponent);
@@ -176,7 +184,7 @@ var DocComponent = /** @class */ (function () {
     DocComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'DocComponent',
-            template: "\n  <Table >\n    <tr *ngIf=\"mydocument\">\n        <td class=\"text-center\">\n         <h3 >{{mydocument.name}}</h3>\n            <pdf-viewer [src]=\"mydocument.path\" \n                [render-text]=\"true\"\n                style=\"display: block;\"\n                [show-all]=\"false\"\n                [page]=\"mydocument.page\">\n            </pdf-viewer>\n        </td>\n    </tr>\n\n    <tr  class=\"center-block\">\n        <td class=\"text-center\" >\n         <audio\n            id=\"t-rex-roar\"\n            controls\n            src={{mydocument.voicePath}}>\n             Your browser does not support the <code>audio</code> element.\n            </audio>\n        </td>\n    </tr>\n    <Table>\n  "
+            template: "\n  <Table >\n  <tr  class=\"center-block\">\n    <td class=\"text-center\" >\n     <audio\n      id=\"t-rex-roar\"\n      controls\n      src={{mydocument.voicePath}}>\n       Your browser does not support the <code>audio</code> element.\n      </audio>\n  </td>\n </tr>\n\n    <tr *ngIf=\"mydocument\">\n        <td class=\"text-center\">\n         <h3 >{{mydocument.name}}</h3>\n            <pdf-viewer [src]=\"mydocument.path\" \n                [render-text]=\"true\"\n                style=\"display: block;\"\n                [show-all]=\"false\"\n                [page]=\"mydocument.page\">\n            </pdf-viewer>\n        </td>\n    </tr>\n\n    <Table>\n  "
         })
     ], DocComponent);
     return DocComponent;
